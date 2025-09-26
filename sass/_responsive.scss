@@ -85,3 +85,80 @@
     margin-top: 0;
   }
 }
+
+
+//TABLET
+
+@media (min-width: 481px) and (max-width: 768px) {
+  main {
+    line-height: 1.5;
+  }
+
+  .link {
+    font-size: 21px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .maps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 12px;
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    .mapaConte {
+      grid-template-columns: 200px 1fr;
+    }
+  }
+
+  .habilidadesContenedor {
+    flex-wrap: wrap;
+    gap: 40px;
+
+    .habilidad {
+      width: 320px;
+    }
+
+    .descripcion {
+      font-size: 16px;
+    }
+  }
+
+  .lineasContenedor {
+    flex-direction: row;
+    gap: 10px;
+
+    .lineaCaja::before {
+      width: 70px;
+    }
+
+    .lineaTitulo,
+    .lineaTexto {
+      font-size: 18px;
+    }
+  }
+
+  .thab {
+    width: 80%;
+    margin: auto;
+  }
+
+  .acordeones-contenedor {
+    grid-template-columns: 1fr 1fr;
+    margin: 1.5rem;
+  }
+
+  footer {
+    margin-top: 10px;
+
+    .footer-quote {
+      font-size: 1rem;
+    }
+  }
+}

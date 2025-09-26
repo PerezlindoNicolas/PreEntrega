@@ -121,6 +121,10 @@ li {
   padding: 25px;
   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08);
   background-color: #123;
+  transition: 2s;
+}
+.habilidadesContenedor .habilidad:hover {
+  transform: translate(40px, -20px);
 }
 .habilidadesContenedor .habilidad .img {
   width: 80px;
@@ -189,6 +193,7 @@ li {
   width: 30%;
   background-color: #f0ad4e;
   text-align: center;
+  margin: auto;
 }
 .thab td, .thab th {
   text-align: center;
@@ -327,6 +332,65 @@ footer .footer-quote {
   }
   footer {
     margin-top: 0;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  main {
+    line-height: 1.5;
+  }
+  .link {
+    font-size: 21px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .maps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 12px;
+  }
+  .maps h3 {
+    font-size: 1.2rem;
+  }
+  .maps .mapaConte {
+    grid-template-columns: 200px 1fr;
+  }
+  .habilidadesContenedor {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .habilidadesContenedor .habilidad {
+    width: 320px;
+  }
+  .habilidadesContenedor .descripcion {
+    font-size: 16px;
+  }
+  .lineasContenedor {
+    flex-direction: row;
+    gap: 10px;
+  }
+  .lineasContenedor .lineaCaja::before {
+    width: 70px;
+  }
+  .lineasContenedor .lineaTitulo,
+  .lineasContenedor .lineaTexto {
+    font-size: 18px;
+  }
+  .thab {
+    width: 80%;
+    margin: auto;
+  }
+  .acordeones-contenedor {
+    grid-template-columns: 1fr 1fr;
+    margin: 1.5rem;
+  }
+  footer {
+    margin-top: 10px;
+  }
+  footer .footer-quote {
+    font-size: 1rem;
   }
 }
 
