@@ -1,0 +1,61 @@
+@use 'variables' as*;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: $color-bg;
+  color: $color-text;
+  font-family: $font-alt;
+  line-height: 1.5;
+}
+
+main {
+  background-color: $color-bg;
+  font-family: $font-main;
+  line-height: 1.2;
+}
+
+
+h1,
+h2,
+h5 {
+  background-color: $color-primary;
+  height: 40px;
+  text-align: center;
+  text-decoration: underline;
+  color: $color-secondary;
+}
+
+h3,
+h4 {
+  color: $color-light;
+  text-decoration: underline;
+}
+
+p {
+  color: beige;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  color: $color-light;
+}
+
+.link {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .bhab{
+  text-align: center;
+}
